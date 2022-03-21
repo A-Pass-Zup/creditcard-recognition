@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_list_features"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/activity_main_bt_mlkit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MLKit"/>
+
+    <Button
+        android:id="@+id/activity_main_bt_cardio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card.IO"/>
+
+    <Button
+        android:id="@+id/activity_main_bt_googlepaymentsclient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Payments Client"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/activity_main_tv_result"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
